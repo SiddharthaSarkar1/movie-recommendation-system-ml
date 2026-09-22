@@ -1,4 +1,4 @@
-# Movie Recommendation System
+# Movie Recommendation System - ML
 
 This project is a content-based movie recommendation system that suggests similar movies based on their plot, genre, and tagline. It leverages Natural Language Processing (NLP) with TF-IDF vectorization and provides recommendations through a REST API built with FastAPI. The system is also integrated with The Movie Database (TMDB) to fetch rich movie metadata like posters, ratings, and release dates.
 
