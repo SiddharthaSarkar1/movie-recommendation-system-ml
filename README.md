@@ -58,3 +58,45 @@ The following are the primary endpoints available:
 ### 1. Environment Variables
 
 Create a `.env` file in the `movie-recommendation-system` directory and add your TMDB API key:
+
+TMDB_API_KEY=your_tmdb_api_key_here
+
+### 2. Running with Docker (Recommended)
+
+This is the easiest way to get the application running.
+
+1.  **Navigate to the project directory:**
+    ```bash
+    cd movie-recommendation-system
+    ```
+
+2.  **Build the Docker image:**
+    ```bash
+    docker build -t movie-recommendation-app .
+    ```
+
+3.  **Run the Docker container:**
+    ```bash
+    docker run -p 8000:8000 movie-recommendation-app
+    ```
+
+The API will be available at `http://localhost:8000`. You can access the interactive API documentation at `http://localhost:8000/docs`.
+
+### 3. Running Locally
+
+1.  **Navigate to the project directory:**
+    ```bash
+    cd movie-recommendation-system
+    ```
+
+2.  **Install dependencies:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Run the FastAPI server:**
+    ```bash
+    uvicorn main:app --host 0.0.0.0 --port 8000
+    ```
+The API will be available at `http://localhost:8000`.
+
